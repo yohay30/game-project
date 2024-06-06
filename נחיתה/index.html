@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../נחיתה/style.css" />
+    <title>הרשמה למשחק הלמידה</title>
+  </head>
+  <body dir="rtl">
+    <!-- נחיתה -->
+    <div id="myDiv1">
+      <fieldset class="fieldset">
+        <br />
+        <p id="p1">ברוכים הבאים <br />לחוויית למידה לקריאה וחשבון</p>
+        <br>
+        <p class="p2">
+          אם הינכם רשומים <br />
+          לחצו היכנס
+        </p>
+        
+        <button id="in">היכנס</button>
+        <p class="p2">או הרשמו</p>
+        <button id="logIn">הירשם</button>
+      </fieldset>
+    </div>
+
+    <div id="myDiv2">
+      <fieldset class="fieldset">
+        <div class="divBackButton">
+          <button class="backButton1">
+            <img id="backButtonImg" src="../image/arrow-right.png" alt="" />
+          </button>
+        </div>
+        <br />
+        <!--טופס הרשמה-->
+        <form action="" id="myForm1">
+          <label for="fname1">שם פרטי</label>
+          <br />
+          <input
+            type="text"
+            name="fname1"
+            id="fname1"
+            placeholder="שם"
+            required
+          />
+          <br />
+          <label for="lname1"> שם משפחה</label>
+          <br />
+          <input
+            type="text"
+            name="lname1"
+            id="lname1"
+            placeholder="משפחה"
+            required
+          />
+          <br />
+          <label for="age1">גיל</label>
+          <br />
+          <input
+            type="number"
+            name="age1"
+            id="age1"
+            min="1"
+            max="120"
+            placeholder="1-120"
+          />
+          <br />
+          <label for="password1">סיסמא</label>
+          <br />
+          <input
+            type="password"
+            name="password1"
+            id="password1"
+            maxlength="15"
+            minlength="8"
+            placeholder="********"
+            required
+          />
+
+          <br /><br />
+          <button id="ok1" type="submit">אשר</button>
+          <button id="no1" type="reset">אפס</button>
+        </form>
+      </fieldset>
+    </div>
+
+    <!--טופס כניסה-->
+
+    <div id="myDiv3">
+      <fieldset class="fieldset">
+        <div class="divBackButton">
+          <button class="backButton2">
+            <img id="backButtonImg" src="../image/arrow-right.png" alt="" />
+          </button>
+        </div>
+        <br /><br />
+
+        <form action="" id="myForm2">
+          <label for="fname2">שם פרטי</label>
+          <br />
+          <input
+            type="text"
+            name="fname2"
+            id="fname2"
+            placeholder="שם"
+            required
+          />
+          <br />
+          <label for="lname2"> שם משפחה</label>
+          <br />
+          <input
+            type="text"
+            name="lname2"
+            id="lname2"
+            placeholder="משפחה"
+            required
+          />
+          <br />
+
+          <label for="password2">סיסמא</label>
+          <br />
+          <input
+            type="password"
+            name="password2"
+            id="password2"
+            maxlength="15"
+            minlength="8"
+            placeholder="********"
+            required
+          />
+          <br /><br />
+          <button id="ok2" type="submit">אשר</button>
+          <button id="no2" type="reset">אפס</button>
+          <br />
+          <div id="errPasseord">
+            <p>
+              משתמש קיים <br />
+              סיסמא לא נכונה !
+            </p>
+          </div>
+          <div id="good">
+            <p>התחברת בהצלחה</p>
+          </div>
+          <div id="error">
+            <p>
+              לא קיים במערכת<br />
+              לחצו על הרשמה
+            </p>
+          </div>
+        </form>
+      </fieldset>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="./appIn.js"></script>
+    <script src="./appLogIn.js"></script>
+  </body>
+</html>

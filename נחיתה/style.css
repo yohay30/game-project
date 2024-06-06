@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  background-image: url("../image/תמונת\ רקע\ עננים.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.fieldset {
+  display: block;
+  text-align: center;
+  color: black;
+  font-weight: lighter;
+  width: 350px;
+  height: 550px;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border-color: rgb(252, 254, 251, 0.4);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+input {
+  margin: 10px;
+  padding: auto;
+  background: rgb(252, 254, 251, 0.4);
+  border-radius: 10px;
+  border-color: rgb(252, 254, 251, 0.4);
+  height: 35px;
+  width: 200px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+input:hover {
+  border-color: rgba(109, 150, 247, 0.4);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+button {
+  font-size: large;
+  height: 45px;
+  width: 90px;
+  background-color: rgb(252, 254, 251, 0.4);
+  border: rgb(252, 254, 251, 0.4);
+  border-radius: 10px;
+}
+button:hover {
+  border-color: rebeccapurple;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  cursor:grab;
+
+}
+#p1 {
+  font-size: 30px;
+  color: rgb(139, 128, 139);
+  font-weight:600;
+}
+.p2{
+  font-size: 23px;
+  color: rgb(139, 128, 139);
+}
+.divBackButton {
+  position: absolute;
+}
+#backButtonImg {
+  height: 35px;
+}
+#ok1:hover,
+#ok2:hover {
+  background-color: rgb(244, 254, 229);
+  cursor:grab;
+
+}
+#no1:hover,
+#no2:hover {
+  background-color: rgb(245, 204, 204);
+  cursor:grab;
+
+}
+#in:hover {
+  background-color: rgb(179, 235, 255);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+#logIn:hover {
+  background-color: rgb(244, 254, 229);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+.backButton1:hover,
+.backButton2:hover {
+  background-color: whitesmoke;
+  cursor:grab;
+
+}
+#myDiv2,
+#myDiv3 {
+  display: none;
+}
+#error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: red;
+  font-size: 20px;
+  font-style: italic;
+  border: 1px solid rgb(241, 151, 151);
+  border-radius: 10px;
+  width: 250px;
+  height: 80px;
+  background-color: rgb(245, 204, 204);
+  margin: 50px;
+  display: none;
+}
+#good {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(105, 181, 116);
+  font-size: 20px;
+  font-style: italic;
+  border: 1px solid rgb(151, 241, 157);
+  border-radius: 10px;
+  width: 250px;
+  height: 60px;
+  background-color: rgb(244, 254, 229);
+  margin: 50px;
+  display: none;
+}
+#errPasseord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(12, 42, 126);
+  font-size: 20px;
+  font-style: italic;
+  border: 1px solid rgb(241, 157, 74);
+  border-radius: 10px;
+  width: 250px;
+  height: 80px;
+  background-color: rgb(179, 235, 255);
+  margin: 50px;
+  display: none;
+}

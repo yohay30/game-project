@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    background-image: url("../image/תמונת רקע עננים.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+ul {
+    margin-top: 0;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+    list-style: none;
+    text-decoration: none;
+    height: 120px;
+    backdrop-filter: blur(10px);
+    border-color: rgb(252, 254, 251, 0.9);
+    border-radius: 20px;
+    background: rgb(252, 254, 251, 0.4);
+    font-style: italic;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+li,
+a {
+    text-decoration: none;
+    color: rgb(56, 92, 87);
+}
+li:hover,
+a:hover {
+    color: rgb(136, 130, 189);
+    border-color: rgba(109, 150, 247, 0.4);
+    border-radius: 10px;
+}
+#tip {
+    height: 100%;
+    text-align: center;
+    width: 500px;
+    backdrop-filter: blur(10px);
+    border-color: rgb(252, 254, 251, 0.9);
+    border-radius: 20px;
+    background: rgb(252, 254, 251, 0.4);
+    font-style: italic;
+    text-align: center;
+    margin: 10px;
+    padding: 25px;
+    text-align: center;
+    direction: rtl;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+button {
+    font-size: large;
+    height: 45px;
+    width: 200px;
+    background-color: rgba(154, 203, 248, 0.4);
+    border: rgb(252, 254, 251, 0.4);
+    border-radius: 10px;
+    cursor: grab;
+}
+button:hover {
+    border-color: 3px solid rgb(78, 247, 72);
+    background-color: rgb(208, 253, 141);
+    font-size: 19px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#gameL {
+    height: 600px;
+    width: 800px;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+#gameInstruction{
+    display: none;
+}
+#gameL p {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    border-color: rgb(252, 254, 251, 0.9);
+    border-radius: 20px;
+    background: rgb(252, 254, 251, 0.4);
+    font-style: italic;
+    text-align: center;
+    margin: 10px;
+    padding: 25px;
+    text-align: center;
+    direction: rtl;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+#gameL p:hover {
+    background-color: rgb(246, 250, 186);
+    box-shadow: 5px 5px 5px rgba(236, 250, 106, 0.3);
+    color: rgb(63, 66, 70);
+    cursor: help;
+}
