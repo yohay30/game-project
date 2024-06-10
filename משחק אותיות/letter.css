@@ -1,116 +1,235 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    text-align: center;
-    background-image: url("../image/תמונת רקע עננים.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  background-image: url("../image/תמונת\ רקע\ עננים.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 ul {
-    margin-top: 0;
-    font-weight: lighter;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 60px;
-    list-style: none;
-    text-decoration: none;
-    height: 120px;
-    backdrop-filter: blur(10px);
-    border-color: rgb(252, 254, 251, 0.9);
-    border-radius: 20px;
-    background: rgb(252, 254, 251, 0.4);
-    font-style: italic;
-    text-align: center;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 0;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 60px;
+  list-style: none;
+  text-decoration: none;
+  height: 120px;
+  backdrop-filter: blur(10px);
+  border-color: rgb(252, 254, 251, 0.9);
+  border-radius: 20px;
+  background: rgb(252, 254, 251, 0.4);
+  font-style: italic;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
+
 li,
 a {
-    text-decoration: none;
-    color: rgb(56, 92, 87);
+  text-decoration: none;
+  color: rgb(56, 92, 87);
 }
 li:hover,
 a:hover {
-    color: rgb(136, 130, 189);
-    border-color: rgba(109, 150, 247, 0.4);
-    border-radius: 10px;
+  color: rgb(136, 130, 189);
+  border-color: rgba(109, 150, 247, 0.4);
+  border-radius: 10px;
 }
 #tip {
-    height: 100%;
-    text-align: center;
-    width: 500px;
-    backdrop-filter: blur(10px);
-    border-color: rgb(252, 254, 251, 0.9);
-    border-radius: 20px;
-    background: rgb(252, 254, 251, 0.4);
-    font-style: italic;
-    text-align: center;
-    margin: 10px;
-    padding: 25px;
-    text-align: center;
-    direction: rtl;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    display: block;
+  height: 100%;
+  text-align: center;
+  width: 500px;
+  backdrop-filter: blur(10px);
+  border-color: rgb(252, 254, 251, 0.9);
+  border-radius: 20px;
+  background: rgb(252, 254, 251, 0.4);
+  font-style: italic;
+  text-align: center;
+  margin: 10px;
+  padding: 25px;
+  text-align: center;
+  direction: rtl;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
+
 button {
-    font-size: large;
-    height: 45px;
-    width: 200px;
-    background-color: rgba(154, 203, 248, 0.4);
-    border: rgb(252, 254, 251, 0.4);
-    border-radius: 10px;
-    cursor: grab;
+  font-size: large;
+  height: 45px;
+  width: 200px;
+  background-color: rgba(154, 203, 248, 0.4);
+  border: rgb(252, 254, 251, 0.4);
+  border-radius: 10px;
+  cursor: grab;
 }
+
 button:hover {
-    border-color: 3px solid rgb(78, 247, 72);
-    background-color: rgb(208, 253, 141);
-    font-size: 19px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-color: 3px solid rgb(78, 247, 72);
+  background-color: rgb(208, 253, 141);
+  font-size: 19px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
+
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 #gameL {
-    height: 600px;
-    width: 800px;
-    display: none;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  height: auto;
+  width: 50%;
+  display: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
+#gameInstruction {
+  display: none;
 }
-#gameInstruction{
-    display: none;
-}
+
 #gameL p {
-    height: 50px;
-    width: 50px;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    backdrop-filter: blur(10px);
-    border-color: rgb(252, 254, 251, 0.9);
-    border-radius: 20px;
-    background: rgb(252, 254, 251, 0.4);
-    font-style: italic;
-    text-align: center;
-    margin: 10px;
-    padding: 25px;
-    text-align: center;
-    direction: rtl;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  border-color: rgb(252, 254, 251, 0.9);
+  border-radius: 20px;
+  background: rgb(252, 254, 251, 0.4);
+  font-style: italic;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
+
 #gameL p:hover {
-    background-color: rgb(246, 250, 186);
-    box-shadow: 5px 5px 5px rgba(236, 250, 106, 0.3);
-    color: rgb(63, 66, 70);
-    cursor: help;
+  background-color: rgb(246, 250, 186);
+  box-shadow: 5px 5px 5px rgba(236, 250, 106, 0.3);
+  color: rgb(63, 66, 70);
+  cursor: help;
+}
+
+#h3 {
+  text-decoration: underline;
+}
+
+#playButton, #pauseButton, #stopButton {
+  font-size: large;
+  height: 45px;
+  width: 100px;
+  background-color: rgba(75, 233, 89, 0.4);
+  border: rgb(252, 254, 251, 0.4);
+  border-radius: 10px;
+  cursor: grab;
+  margin: 5px;
+}
+
+#playButton:hover {
+  background-color: rgba(75, 233, 89);
+}
+
+#pauseButton {
+  background-color: rgba(88, 167, 241, 0.4);
+}
+
+#pauseButton:hover {
+  background-color: rgba(88, 167, 241);
+}
+
+#stopButton {
+  background-color: rgba(248, 73, 50, 0.4);
+}
+
+#stopButton:hover {
+  background-color: rgba(248, 73, 50);
+}
+
+.fieldset {
+  display: none;
+}
+
+#song {
+  height: 100px;
+  width: 200px;
+  background-color: rgba(235, 147, 227, 0.4);
+  border: rgb(252, 254, 251, 0.4);
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+  display: none;
+  font-size: 25px;
+}
+
+#song:hover {
+  background-color: rgba(235, 147, 227);
+  color: rgb(250, 248, 139);
+}
+
+@media (max-width: 400px) and (max-height: 823px) {
+  body {
+    font-size: 24px;
+  }
+
+  #tip {
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+  }
+
+  button {
+    font-size: medium;
+    height: 40px;
+    width: 150px;
+  }
+
+  main {
+    padding: 5px;
+  }
+  nav{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+  ul{
+    height: 60px;
+    margin-top: 5px;
+  }
+  li,a,#profil{
+    font-size: 14px;
+    color: rgb(0, 81, 255);
+  }
+
+  #gameL {
+    width: 100%;
+    padding: 5px;
+  }
+
+  #gameL p {
+    height: 40px;
+    width: 40px;
+    margin: 3px;
+    padding: 5px;
+  }
+
+  #playButton, #pauseButton, #stopButton {
+    height: 40px;
+    width: 80px;
+    font-size: medium;
+  }
+
+  #song {
+    height: 80px;
+    width: 160px;
+    font-size: 20px;
+  }
 }

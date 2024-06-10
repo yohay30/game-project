@@ -10,6 +10,7 @@ body {
   background-size: cover;
   background-position: center;
 }
+
 ul {
   margin-top: 0;
   font-weight: lighter;
@@ -34,12 +35,14 @@ a {
   text-decoration: none;
   color: rgb(56, 92, 87);
 }
+
 li:hover,
 a:hover {
   color: rgb(136, 130, 189);
   border-color: rgba(109, 150, 247, 0.4);
   border-radius: 10px;
 }
+
 #tip {
   height: 100%;
   text-align: center;
@@ -52,10 +55,10 @@ a:hover {
   text-align: center;
   margin: 10px;
   padding: 25px;
-  text-align: center;
   direction: rtl;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
+
 button {
   font-size: large;
   height: 45px;
@@ -65,17 +68,22 @@ button {
   border-radius: 10px;
   cursor: grab;
 }
+
 button:hover {
   border-color: 3px solid rgb(78, 247, 72);
   background-color: rgb(208, 253, 141);
   font-size: 19px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
+
 main {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 }
+
 #h3 {
   text-decoration: underline;
 }
@@ -92,9 +100,11 @@ main {
   border-color: rgb(252, 254, 251, 0.4);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
-.gameM{
+
+.gameM {
   display: none;
 }
+
 #A {
   height: 200px;
   width: 800px;
@@ -106,8 +116,8 @@ main {
   border-radius: 20px;
   border-color: rgb(252, 254, 251, 0.4);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-
 }
+
 #A1,
 #A2,
 #A3,
@@ -123,21 +133,173 @@ main {
   border-radius: 20px;
   border-color: rgba(45, 136, 0, 0.4);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-
 }
+
 #A1:hover,
 #A2:hover,
 #A3:hover,
-#A4:hover{
+#A4:hover {
   background-color: rgb(246, 250, 186);
   box-shadow: 5px 5px 5px rgba(236, 250, 106, 0.3);
   color: rgb(63, 66, 70);
   cursor: help;
+}
 
-} 
-#A:has(div:hover)>div:not(:hover){
-  opacity: .3;
+#A:has(div:hover) > div:not(:hover) {
+  opacity: 0.3;
   background-color: rgb(236, 236, 221);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   cursor: help;
+}
+
+#answer {
+  background-color: rgb(244, 254, 229);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  height: 100px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: aqua;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#answer {
+  background-color: rgb(187, 250, 94);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  height: 70px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: larger;
+  display: none;
+}
+
+#false {
+  background-color: rgb(250, 130, 94);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  height: 70px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: larger;
+  display: none;
+}
+
+@media (max-width: 400px) and (max-height: 823px) {
+  body {
+    font-size: 16px; /* שינוי גודל הפונט הכללי */
+  }
+
+  #Q {
+    height: 150px; /* הקטנת גובה השאלה */
+    width: 350px; /* הקטנת רוחב השאלה */
+    font-size: 50px; /* שינוי גודל הפונט של השאלה */
+  }
+
+  #A {
+    height: auto; /* שינוי גובה הקופסה של התשובות */
+    width: 350px; /* הקטנת רוחב הקופסה של התשובות */
+    margin-top: 20px;
+    flex-direction: column; /* תצוגה אנכית לתשובות */
+  }
+
+  #A1,
+  #A2,
+  #A3,
+  #A4 {
+    height: 50px; /* הקטנת גובה התשובות */
+    width: 80%; /* שימוש ברוחב של 80% מהרוחב הכללי */
+    font-size: 24px; /* שינוי גודל הפונט של התשובות */
+    margin: 5px 0; /* מרווח בין התשובות */
+  }
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav,
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px; /* הקטנת גובה התפריט */
+    width: 400px;
+    margin: 0px;
+
+  }
+  ul {
+    height: 60px; /* הקטנת גובה התפריט */
+    width: 340px;
+    margin-top: 5px;
+
+    
+  }
+
+  li,
+  a {
+    justify-content: space-evenly;
+    color: rgb(16, 57, 238);
+
+    font-size: 14px; /* הקטנת גודל הפונט של התפריט */
+  }
+
+  #tip {
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+  }
+
+  button {
+    font-size: medium;
+    height: 35px;
+    width: 120px;
+  }
+
+  main {
+    padding: 5px;
+  }
+  #answer {
+    background-color: rgb(187, 250, 94);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: larger;
+    display: none;
+  }
+
+  #false {
+    background-color: rgb(250, 130, 94);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: larger;
+    display: none;
+  }
+  #nickodM {
+    display: none;
+    font-size: 15px;
+  }
 }

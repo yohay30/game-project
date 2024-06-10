@@ -7,7 +7,6 @@ const backButton1 = document.querySelector(".backButton1");
 const backButton2 = document.querySelector(".backButton2");
 
 iin.addEventListener("click", function () {
-  console.log(1);
   myDiv1.style.display = "none";
   myDiv3.style.display = "block";
 });

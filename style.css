@@ -12,6 +12,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  color: rgb(83, 82, 83);
 }
 
 .fieldset {
@@ -20,15 +21,15 @@ body {
   color: black;
   font-weight: lighter;
   width: 350px;
-  height: 550px;
+  height: 500px;
   backdrop-filter: blur(10px);
   border-radius: 20px;
   border-color: rgb(252, 254, 251, 0.4);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-
 }
 
 input {
+  font-size: 5px;
   margin: 10px;
   padding: auto;
   background: rgb(252, 254, 251, 0.4);
@@ -37,16 +38,18 @@ input {
   height: 35px;
   width: 200px;
   font-style: italic;
-  font-weight: bold;
   text-align: center;
+}
+
+::placeholder {
+  font-size: 15px;
 }
 input:hover {
   border-color: rgba(109, 150, 247, 0.4);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-
 }
 button {
-  font-size: large;
+  font-size: 15px;
   height: 45px;
   width: 90px;
   background-color: rgb(252, 254, 251, 0.4);
@@ -55,16 +58,19 @@ button {
 }
 button:hover {
   border-color: rebeccapurple;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  cursor:grab;
-
+  box-shadow: 5px 5px 10px rgba(24, 17, 17, 0.555);
+  cursor: grab;
+}
+label {
+  color: rgb(83, 82, 83);
+  font-size: 25px;
 }
 #p1 {
   font-size: 30px;
   color: rgb(139, 128, 139);
-  font-weight:600;
+  font-weight: 600;
 }
-.p2{
+.p2 {
   font-size: 23px;
   color: rgb(139, 128, 139);
 }
@@ -74,33 +80,41 @@ button:hover {
 #backButtonImg {
   height: 35px;
 }
+#ok1,
+#ok2,
+#no1,
+#no2 {
+  font-size: 25px;
+}
 #ok1:hover,
 #ok2:hover {
-  background-color: rgb(244, 254, 229);
-  cursor:grab;
-
+  background-color: rgb(218, 247, 174);
+  cursor: grab;
 }
 #no1:hover,
 #no2:hover {
   background-color: rgb(245, 204, 204);
-  cursor:grab;
-
+  cursor: grab;
+}
+#in,
+#logIn {
+  font-size: 20px;
 }
 #in:hover {
+  font-weight: bold;
   background-color: rgb(179, 235, 255);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-
 }
 #logIn:hover {
+  font-weight: bold;
+
   background-color: rgb(244, 254, 229);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-
 }
 .backButton1:hover,
 .backButton2:hover {
   background-color: whitesmoke;
-  cursor:grab;
-
+  cursor: grab;
 }
 #myDiv2,
 #myDiv3 {
@@ -138,7 +152,7 @@ button:hover {
   margin: 50px;
   display: none;
 }
-#errPasseord {
+#errPassword {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,4 +167,37 @@ button:hover {
   background-color: rgb(179, 235, 255);
   margin: 50px;
   display: none;
+}
+@media (max-width: 400px) and (max-height: 823px) {
+  body {
+    font-size: 24px;
+  }
+
+  .fieldset {
+    width: fit-content;
+    height: min-content;
+    margin: 5px auto;
+  }
+
+  button {
+    background-color: whitesmoke;
+    font-size: medium;
+    height: 40px;
+    width: 80px;
+  }
+
+  main {
+    padding: 5px;
+  }
+  #ok1,
+  #ok2 {
+    border: 1px solid rgb(151, 241, 157);
+
+    background-color: rgb(218, 247, 174);
+  }
+  #no1,
+  #no2 {
+    border: 1px solid rgb(241, 151, 151);
+    background-color: rgb(245, 204, 204);
+  }
 }

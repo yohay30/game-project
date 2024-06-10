@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./letter.css" />
+    <link rel="stylesheet" href=".//normalize.css">  
+
     <title>משחק האותיות</title>
   </head>
   <body dir="rtl">
     <header id="header">
       <nav>
         <ul>
-          <li><a href="#"> פרופיל</a></li>
+          <li id="profil">פרופיל</li>
+          <li><a href="/index.html"> התנתק</a></li>
           <li><a href="../מבוא לבחירת משחק/chose.html">משחקייה</a></li>
-          <li><a href="#">תקנון</a></li>
-          <li><a href="#">צור קשר</a></li>
-          <li>ניקוד</li>
+          <li><a href="../צור קשר/contact.html">צור קשר</a></li>
         </ul>
       </nav>
     </header>
@@ -23,40 +24,57 @@
       <article id="tip">
         <h3 id="h3">מבוא להורים</h3>
         <p>
-            לימוד אותיות לילדים הוא חיוני להתפתחות שפתית והכנה לבית הספר. <br>זהו הבסיס לקריאה וכתיבה, מחזק את כישורי השפה, ומעשיר את אוצר המילים. הצלחה בלימוד אותיות מגבירה את הביטחון העצמי של הילדים ומכינה אותם להתמודדות עם מטלות לימודיות בעתיד. כך, ילדים יכולים לתקשר ולהבין את העולם בצורה טובה יותר.  </p>
+          לימוד אותיות לילדים הוא חיוני להתפתחות שפתית והכנה לבית הספר. <br>זהו הבסיס לקריאה וכתיבה, מחזק את כישורי השפה, ומעשיר את אוצר המילים. הצלחה בלימוד אותיות מגבירה את הביטחון העצמי של הילדים ומכינה אותם להתמודדות עם מטלות לימודיות בעתיד. כך, ילדים יכולים לתקשר ולהבין את העולם בצורה טובה יותר.
+        </p>
         <button>לחצו עלי להתחיל במשחק</button>
       </article>
 
       <h3 id="gameInstruction">לחצו על האותיות כדי לשמוע את הצליל</h3>
       <div id="gameL">
-        
         <p id="א">א</p>
-        <p>ב</p>
-        <p>ג</p>
-        <p>ד</p>
-        <p>ה</p>
-        <p>ו</p>
-        <p>ז</p>
-        <p>ח</p>
-        <p>ט</p>
-        <p>י</p>
-        <p>כ</p>
-        <p>ך</p>
-        <p>ל</p>
-        <p>מ</p>
-        <p>ם</p>
-        <p>ס</p>
-        <p>ע</p>
-        <p>פ</p>
-        <p>ף</p>
-        <p>צ</p>
-        <p>ץ</p>
-        <p>ק</p>
-        <p>ר</פ>
-        <p>ש</p>
-        <p>ת</p>
+        <p id="ב">ב</p>
+        <p id="ג">ג</p>
+        <p id="ד">ד</p>
+        <p id="ה">ה</p>
+        <p id="ו">ו</p>
+        <p id="ז">ז</p>
+        <p id="ח">ח</p>
+        <p id="ט">ט</p>
+        <p id="י">י</p>
+        <p id="כ">כ</p>
+        <p id="ך">ך</p>
+        <p id="ל">ל</p>
+        <p id="מ">מ</p>
+        <p id="ם">ם</p>
+        <p id="נ">נ</p>
+        <p id="ן">ן</p>
+        <p id="ס">ס</p>
+        <p id="ע">ע</p>
+        <p id="פ">פ</p>
+        <p id="ף">ף</p>
+        <p id="צ">צ</p>
+        <p id="ץ">ץ</p>
+        <p id="ק">ק</p>
+        <p id="ר">ר</p>
+        <p id="ש">ש</p>
+        <p id="ת">ת</p>
+
+        <br><br>
+        
       </div>
+      <div class="fieldset">
+        <h3>נגן את שיר האל"ף ב"ית</h3>
+        <audio id="mySong" src="../צלילים/שיר האלף בית.mp3"></audio>
+        <button id="playButton">נגן</button>
+        <button id="pauseButton">הפסק</button>
+        <button id="stopButton">עצור</button>
+      </div>
+      <br>
+
+      <div id="song">לשמיעת שיר<br> האותיות<br>לחץ עלי</div>
     </main>
+
     <script src="./letter.js"></script>
+    <script src="audioPlayer.js"></script>
   </body>
 </html>

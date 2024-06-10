@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./mathStyle.css" />
+    <link rel="stylesheet" href="./normalize.css" />
     <title>משחק חשבון</title>
   </head>
   <body dir="rtl">
     <header id="header">
       <nav>
         <ul>
-          <li><a href="#"> פרופיל</a></li>
+          <li id="profil">פרופיל</li>
+          <li><a href="/index.html"> התנתק</a></li>
           <li><a href="../מבוא לבחירת משחק/chose.html">משחקייה</a></li>
-          <li><a href="#">תקנון</a></li>
-          <li><a href="#">צור קשר</a></li>
-          <li>ניקוד</li>
+          <li><a href="../צור קשר/contact.html">צור קשר</a></li>
+          <li id="nickodM">ניקוד</li>
         </ul>
       </nav>
     </header>
@@ -23,28 +24,35 @@
       <article id="tip">
         <h3 id="h3">מבוא להורים</h3>
         <p>
-          מרגע שילדים גדלים ומתעניינים בחשבון, <br>הם פותחים יכולות שימושיות שישמשו
-          אותם לאורך כל חייהם. <br><big>מקבלת החלטות חכמה ומנהיגות</big> יכולה להיות מאפיין
-          שיועיל להם בעתיד, ולימוד חשבון מסייע בפיתוח היכולת הזו. בסיום הלימודים
-          הם מוכנים יותר להתמודד עם אתגרים חדשים ולהתקדם בחיים בצורה מצוינת.
+          מרגע שילדים גדלים ומתעניינים בחשבון, <br />הם פותחים יכולות שימושיות
+          שישמשו אותם לאורך כל חייהם. <br /><big
+            >מקבלת החלטות חכמה ומנהיגות</big
+          >
+          יכולה להיות מאפיין שיועיל להם בעתיד, ולימוד חשבון מסייע בפיתוח היכולת
+          הזו. בסיום הלימודים הם מוכנים יותר להתמודד עם אתגרים חדשים ולהתקדם
+          בחיים בצורה מצוינת.
+          <br /><br />
+          <big> ענו על כמה שיותר שאלות והרוויחו נקודות 😁 </big>
         </p>
-        <button >לחצו עלי להתחיל במשחק</button>
+        <button>לחצו עלי להתחיל במשחק</button>
       </article>
 
-      
-      <div class="gameM">
-<div id="Q">4+4</div>
-<div id="A">
-  <div id="A1">1</div>
-  <div id="A2">2</div>
-  <div id="A3">3</div>
-  <div id="A4">4</div>
-</div>
-</div>
-        
+      <div class="gameM" style="display: none">
+        <div id="Q"></div>
+        <div id="A">
+          <div id="A1" class="answer">1</div>
+          <div id="A2" class="answer">2</div>
+          <div id="A3" class="answer">3</div>
+          <div id="A4" class="answer">4</div>
+        </div>
       </div>
+      <br />
     </main>
-    <footer></footer>
+    <br />
+    <footer>
+      <div id="answer">כל הכבוד לך 🎉</div>
+      <div id="false">נסה שוב 😅</div>
+    </footer>
     <script src="./mathJS.js"></script>
   </body>
 </html>
