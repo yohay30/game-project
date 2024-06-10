@@ -18,14 +18,14 @@
           אם הינכם רשומים <br />
           לחצו היכנס
         </p>
-        <img src="../java script project/מבוא לבחירת משחק/chose.html" alt="" />
+
         <button id="in">היכנס</button>
         <p class="p2">או הרשמו</p>
         <button id="logIn">הירשם</button>
       </fieldset>
     </div>
 
-    <div id="myDiv2" style="display: none;">
+    <div id="myDiv2">
       <fieldset class="fieldset">
         <div class="divBackButton">
           <button class="backButton1">
@@ -73,22 +73,21 @@
             name="password1"
             id="password1"
             maxlength="15"
-            minlength="6"
-            placeholder="8 תווים "
+            minlength="8"
+            placeholder="********"
             required
           />
-          <br /><br /><br />
+
+          <br /><br />
           <button id="ok1" type="submit">אשר</button>
           <button id="no1" type="reset">אפס</button>
         </form>
-        <div id="registerSuccess" style="display: none; color: green;">
-          נרשמת בהצלחה!
-        </div>
       </fieldset>
     </div>
 
     <!--טופס כניסה-->
-    <div id="myDiv3" style="display: none;">
+
+    <div id="myDiv3">
       <fieldset class="fieldset">
         <div class="divBackButton">
           <button class="backButton2">
@@ -96,6 +95,7 @@
           </button>
         </div>
         <br /><br />
+
         <form action="" id="myForm2">
           <label for="fname2">שם פרטי</label>
           <br />
@@ -117,6 +117,7 @@
             required
           />
           <br />
+
           <label for="password2">סיסמא</label>
           <br />
           <input
@@ -124,29 +125,33 @@
             name="password2"
             id="password2"
             maxlength="15"
-            minlength="6"
+            minlength="8"
             placeholder="********"
             required
           />
-          <br /><br /><br />
+          <br /><br />
           <button id="ok2" type="submit">אשר</button>
           <button id="no2" type="reset">אפס</button>
           <br />
-          <div id="errPassword" style="display: none; color: red;">
+          <div id="errPassword">
             משתמש קיים <br />
-            סיסמא לא נכונה!
+            סיסמא לא נכונה !
           </div>
-          <div id="good" style="display: none; color: green;">
-            התחברת בהצלחה
+          <div id="good">
+            <p>התחברת בהצלחה</p>
           </div>
-          <div id="error" style="display: none; color: red;">
-            לא קיים במערכת<br />
-            לחצו על הרשמה
+          <div id="error">
+            <p>
+              לא קיים במערכת<br />
+              לחצו על הרשמה
+            </p>
           </div>
         </form>
       </fieldset>
     </div>
 
     <script src="./app.js"></script>
+    <script src="./appIn.js"></script>
+    <script src="./appLogIn.js"></script>
   </body>
 </html>

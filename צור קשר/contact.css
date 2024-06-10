@@ -9,9 +9,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
+  
 }
 ul {
   margin-top: 0;
+  position: sticky;
   font-weight: lighter;
   display: flex;
   align-items: center;
